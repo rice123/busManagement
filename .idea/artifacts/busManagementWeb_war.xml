@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="busManagementWeb:war">
+    <output-path>$PROJECT_DIR$/busManagementWeb/target</output-path>
+    <root id="archive" name="busManagementWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="busManagementWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/busManagement.iml" filepath="$PROJECT_DIR$/busManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/busManagementWeb/busManagementWeb.iml" filepath="$PROJECT_DIR$/busManagementWeb/busManagementWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/business.iml" filepath="$PROJECT_DIR$/business/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/business-bus/business-bus.iml" filepath="$PROJECT_DIR$/business/business-bus/business-bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business/business-station/business-station.iml" filepath="$PROJECT_DIR$/business/business-station/business-station.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental.iml" filepath="$PROJECT_DIR$/fundamental/fundamental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental-config/fundamental-config.iml" filepath="$PROJECT_DIR$/fundamental/fundamental-config/fundamental-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental-datasource/fundamental-datasource.iml" filepath="$PROJECT_DIR$/fundamental/fundamental-datasource/fundamental-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental-logger/fundamental-logger.iml" filepath="$PROJECT_DIR$/fundamental/fundamental-logger/fundamental-logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental-orm/fundamental-orm.iml" filepath="$PROJECT_DIR$/fundamental/fundamental-orm/fundamental-orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamental/fundamental-util/fundamental-util.iml" filepath="$PROJECT_DIR$/fundamental/fundamental-util/fundamental-util.iml" />
+    </modules>
+  </component>
+</project>
+
