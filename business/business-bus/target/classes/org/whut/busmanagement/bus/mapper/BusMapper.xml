@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.whut.busmanagement.business.bus.mapper.BusMapper">
+    <sql id="bus_fields">
+		ID,NUMBER,STATUS
+	</sql>
+
+    <resultMap id="busResultMap" type="Bus">
+        <id property="id" column="ID" />
+        <result property="number" column="NUMBER" />
+        <result property="status" column="STATUS" />
+    </resultMap>
+
+    <insert id="add" parameterType="Bus"  keyProperty="id"
+            useGeneratedKeys="true">
+        INSERT INTO
+        bus(
+        <include refid="bus_fields" />
+        )
+        VALUES (#{id}, #{number}, #{status});
+        <selectKey resultType="long" keyProperty="id">
+            select
+            LAST_INSERT_ID() as id
+        </selectKey>
+    </insert>
+
+    <select id="totalCount" parameterType="map" resultType="java.lang.Long">
+        SELECT count(*)
+        FROM bus
+        <where>
+            <if test="number != null">NUMBER=#{number}</if>
+        </where>
+    </select>
+
+
+    <update id="update" parameterType="Bus">
+        UPDATE bus
+        <set>
+            <if test="number != null">NUMBER=#{number},</if>
+            <if test="status != null">STATUS=#{status}</if>
+        </set>
+        WHERE ID = #{id};
+    </update>
+
+    <delete id="delete" parameterType="Bus">
+        DELETE FROM bus
+        <where>
+            <if test="id != null">ID=#{id}</if>
+            <if test="number != null">AND NUMBER=#{number}</if>
+            <if test="status != null">AND STATUS=#{status}</if>
+        </where>
+    </delete>
+    <select id="getBusInfoById" parameterType="java.lang.Long" resultMap="busResultMap">
+         SELECT
+         *
+         FROM
+         bus
+         WHERE
+         id=#{id}
+    </select>
+</mapper>
